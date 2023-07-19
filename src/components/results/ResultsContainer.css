@@ -5,33 +5,18 @@
     align-items: center;
     padding: .7rem 0;
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
 }
 
 .resultsType_navbar span{
     cursor: pointer;
     padding: 0 4rem;
-    color: rgb(161, 161, 161);
-    width: 50%;
+    margin: auto auto;
     text-align: center;
     
 }
 
 
 
-.resultstype_underline{
-    /* display: inline-block; */
-    transition: .3s;
-    background-color: #16134ed1;
-    border-radius: 30px;
-    height: 8px;
-    width: 50%;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    transform: translateY(50%);
-}
 
 /* media query */
 @media screen and (max-width: 600px) {

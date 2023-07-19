@@ -25,6 +25,7 @@ const TournamentsContainer = (props) => {
 
   return (
     <>
+    
       <div className='tournamentsContaier' >
         <h1>Tournaments</h1>
 

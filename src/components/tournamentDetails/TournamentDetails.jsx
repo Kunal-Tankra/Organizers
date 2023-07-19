@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./TournamentDetails.css"
 import { useParams } from 'react-router-dom'
 import getApiData from '../../GetApiFunc'
+import "./honours/HonoursItems.css"
 
 const TournamentDetails = () => {
   const [eventData, setEventData] = useState({});
