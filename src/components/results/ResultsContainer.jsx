@@ -24,7 +24,7 @@ const ResultsContainer = () => {
       </div>
 
       <div className="matchLists">
-            {matchList.map(matches=><MatchListContainer key={matches.id} event_title={matches.event_title} matcheResults={matches.results} />)}
+            {matchList.map(matches=><MatchListContainer key={matches.id} id={matches.id} event_title={matches.event_title} matcheResults={matches.results} />)}
       </div>
     </>
   )

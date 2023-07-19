@@ -22,6 +22,7 @@ import TournamentDetails from './components/tournamentDetails/TournamentDetails'
 import "./components/Login.css"
 import Results from './components/results/Results';
 import ResultsContainer from './components/results/ResultsContainer';
+import EventAllResults from './components/results/EventAllResults';
 
 function App() {
   const [studentsData, setStudentsData] = useState([]);
@@ -79,6 +80,8 @@ function App() {
 
           </Route>
 
+          {/* all results */}
+          <Route exact path="/results/:id" element={<EventAllResults />} />
 
         </Routes>
 
