@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Carousel.css"
 import { NavLink } from 'react-router-dom'
 
-const Carousel = () => {
-    const arr = [
-        { img: "https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" },
-        { img: "https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" },
-        { img: "https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" },
-        { img: "https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" },
-        { img: "https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" }
-    ]
+const Carousel = (props) => {
+    const {events} = props
+
+    const [carouselEvents, setCarouselEvents] = useState([]);
+    
+    useEffect(() => {
+        // set initially
+        setCarouselEvents(events.slice(0,5))
+
+    }, [events]);
+
+  
+
+    
     return (
         <>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -18,14 +24,14 @@ const Carousel = () => {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 
                     {/* remaining */}
-                    {arr.map((data, idx) => {
+                    {carouselEvents.map((event, idx) => {
                         // without first 
                         if (idx === 0) {
                             // eslint-disable-next-line
                             return
                         }
                         return (
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={idx} aria-label={`Slide ${idx + 1}`}></button>
+                            <button key={event.id} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={idx} aria-label={`Slide ${idx + 1}`}></button>
                         )
                     })}
 
@@ -34,18 +40,18 @@ const Carousel = () => {
                 <div className="carousel-inner">
                     {/* first */}
                     <div className="carousel-item active">
-                        <img src="https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" className="d-block w-100" alt="carouselImage" />
+                        <img src={carouselEvents[0]?.event_image} className="d-block w-100" alt="carouselImage" />
                         <div className="carousel-caption d-none d-md-block">
 
-                            <NavLink to="/tournament">
-                                <h5>First slide label Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo</h5>
+                            <NavLink to={`/tournament/${carouselEvents[0]?.id}`}>
+                                <h5>{carouselEvents[0]?.event_title}</h5>
                             </NavLink>
                             {/* <p>Some representative placeholder content for the first slide.</p> */}
                         </div>
                     </div>
 
                     {/* remaining */}
-                    {arr.map((data, idx) => {
+                    {carouselEvents.map((event, idx) => {
                         // without first 
                         if (idx === 0) {
                             // eslint-disable-next-line
@@ -53,12 +59,12 @@ const Carousel = () => {
                         }
 
                         return (
-                            <div className="carousel-item">
-                                <img src="https://wowslider.com/sliders/demo-93/data1/images/lake.jpg" className="d-block w-100" alt="carouselImage" />
+                            <div key={event.id} className="carousel-item">
+                                <img src={event.event_image} className="d-block w-100" alt="carouselImage" />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <NavLink to="/tournament">
+                                    <NavLink to={`/tournament/${event.id}`}>
 
-                                        <h5>{idx} First slide label Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo</h5>
+                                        <h5>{event.event_title}</h5>
                                     </NavLink>
                                     {/* <p>Some representative placeholder content for the first slide.</p> */}
                                 </div>

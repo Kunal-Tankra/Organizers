@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./TournamentDetails.css"
-import Honours from "./honours/Honours"
-import StudentsChild from '../academy/StudentsChild'
 import { useParams } from 'react-router-dom'
 import getApiData from '../../GetApiFunc'
 
@@ -16,10 +14,9 @@ const TournamentDetails = () => {
       .then(data => setEventData(data))
   }, [id]);
 
-  console.log(eventData)
+  // console.log(eventData)
 
 
-  const students = []
 
   return (
     <>
@@ -38,7 +35,7 @@ const TournamentDetails = () => {
         <h1>Rules</h1>
 
         <ul className='tournamentRules' >
-          {eventData.event_rules?.split("-").map(rule => <li>{rule}</li>)}
+          {eventData.event_rules?.split("-").map((rule, idx )=> <li key={idx} >{rule}</li>)}
 
         </ul>
 

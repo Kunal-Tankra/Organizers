@@ -16,7 +16,6 @@ import upArrowImg from "./components/home/upArrow.png"
 import Under15 from './components/academy/Under15';
 import Under13 from './components/academy/Under13';
 import NewsDetails from './components/announcements/NewsDetails';
-import getApiData from './GetApiFunc';
 import { useEffect, useState } from 'react';
 import StickyNavbar from './components/navbar/StickyNavbar';
 import TournamentDetails from './components/tournamentDetails/TournamentDetails';
@@ -30,8 +29,8 @@ function App() {
 
   useEffect(() => {
     // students data
-    getApiData(`${process.env.REACT_APP_APIKEY}/api/v1/student`)
-      .then(data => setStudentsData(data))
+    // getApiData(`${process.env.REACT_APP_APIKEY}/api/v1/student`)
+    //   .then(data => setStudentsData(data))
   }, []);
 
   // scroll position

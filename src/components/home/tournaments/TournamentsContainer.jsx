@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./TournamentsContainer.css"
 import Tournament from './Tournament'
-import getApiData from '../../../GetApiFunc';
 
-const TournamentsContainer = () => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    getApiData(`${process.env.REACT_APP_APIKEY}/api/v1/events/`)
-      .then(data => setEvents(data, "data"))
-  }, []);
+const TournamentsContainer = (props) => {
+  const {events} = props
 
 
   return (
@@ -22,8 +16,9 @@ const TournamentsContainer = () => {
             Select Type
           </button>
           <div className="dropdown-menu">
-            <button className="dropdown-item" onClick={(e) => console.log(e)} >Overall</button>
-            <button className="dropdown-item" onClick={(e) => console.log(e)} >Academy</button>
+            <button className="dropdown-item" onClick={(e) => console.log(e)} >Under 18</button>
+            <button className="dropdown-item" onClick={(e) => console.log(e)} >Under 15</button>
+            <button className="dropdown-item" onClick={(e) => console.log(e)} >Open</button>
           </div>
         </div>
 
