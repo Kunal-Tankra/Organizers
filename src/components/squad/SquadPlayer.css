@@ -1,0 +1,19 @@
+.squadPlayer{
+    padding: 10px 1.3rem;
+    text-align: center;
+}
+
+.squadPlayer img{
+    border: solid 1px #f4f4f4;
+    max-width: 210px;
+}
+
+.squadPlayer span{
+    color: #d10a11;
+}
+
+.squadPlayer p{
+    font-size: 1.2rem;
+    margin: .8rem 0;
+    font-weight: 600;
+}

@@ -1,0 +1,23 @@
+.tournamentsContaier{
+    width: 80%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 5rem 7rem;
+}
+
+.tournamentType .dropdown-item{
+    color: black;
+}
+
+.tournamentType .dropdown-item:active{
+    background-color: rgb(153, 153, 153);
+}
+
+/* media query */
+@media screen and (max-width: 800px) {
+    .tournamentsContaier{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+}

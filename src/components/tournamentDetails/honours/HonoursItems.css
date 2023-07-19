@@ -1,0 +1,18 @@
+.honours_items {
+    width: 50%;
+    text-align: center;
+}
+
+.honours_items img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.honours_items h3{
+    font-weight: 600;
+    color: #d10a11;
+}
+
+.honours_items span{
+    color: #777;
+}

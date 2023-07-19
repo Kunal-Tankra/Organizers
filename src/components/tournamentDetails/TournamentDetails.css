@@ -1,0 +1,30 @@
+.tournamentDetails_container>img {
+    width: 100%;
+}
+
+.tournamentDetails_container>h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.tournamentRules li {
+    margin-bottom: 1rem;
+}
+
+.eventTrophy {
+    margin: auto auto;
+}
+
+.honours_items.eventTrophy img {
+    max-width: 16rem;
+}
+
+.resultBtn.btn-outline-info {
+    color: #29479E;
+    border-color: #29479E;
+}
+
+.resultBtn.btn-outline-info:hover{
+    color: white;
+    background-color: #29479E;
+}

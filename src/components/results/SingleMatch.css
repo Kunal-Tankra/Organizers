@@ -1,0 +1,47 @@
+.singleMatch{
+    width: 32.2%;
+    border: solid 1px rgb(230, 231, 236);
+    border-radius: 5px;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.singleMatch:hover{
+    color: black;
+}
+
+.matchType{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.score{
+    margin-top: .2rem;
+    display: flex;
+    gap: 2.3rem;
+}
+
+.score span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.scoreNum{
+
+    color: rgb(102, 102, 102);
+}
+
+span.afterScore{
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: .6rem;
+    color: rgb(153, 153, 153);
+}
+
+.singleMatch p{
+    margin-top: 1rem;
+    font-size: 13px;
+}
+
+

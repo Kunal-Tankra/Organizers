@@ -1,0 +1,25 @@
+.squadChild{
+    padding: 1rem 0;
+}
+
+.squadChild>h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    color: #d10a11;
+    border-left: #d10a11 1px solid;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* squadPlayers_container */
+.squadPlayers_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+
+
+
+  

@@ -1,0 +1,125 @@
+/* login bg image */
+.login_BgImg{
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.login_BgImg img{
+    width: 100%;
+    transition: .8s;
+}
+
+.login_BgImg img:hover{
+    transform: scale(1.07);
+}
+
+/* login container */
+.loginContainer{
+    background-color: #fff;  
+    width: 80%;
+    margin: 0px auto;
+    padding: 3.5rem 5.5rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.loginContainer>h1{
+    font-size: 3rem;
+    color: #444;
+    font-weight: 900;
+}
+
+/* form */
+.loginContainer form{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+}
+
+.loginContainer form a{
+    color: #2bb7e3;
+}
+
+.loginName , .loginPassword{
+    margin: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #26bbea;
+    padding: 5px;
+    transition: .5s;
+}
+
+.loginName:hover , .loginPassword:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.loginName svg , .loginPassword svg{
+    color: #999;
+}
+
+.loginName input, .loginPassword input{
+
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.login_afterInputs{
+    /* border: solid 1px red; */
+    margin-top: 15px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* login btn */
+.loginBtn{
+    width: 30%;
+    color: #2bb7e3;
+    border: #2bb7e3 2px solid;
+    margin: 25px 0;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: large;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.loginBtn:hover{
+    color: #fff;
+    background-color: #2bb7e3;
+    width: 32%;
+}
+
+/* media query */
+@media screen and (max-width: 950px){
+    .loginContainer{
+        width: 100%;
+        bottom: 0;
+        padding: 2rem;
+    }
+
+
+    .loginName , .loginPassword{
+        width: 80%;
+    }
+
+    .loginBtn{
+        width: 60%;
+    }
+}
+
+
+
+

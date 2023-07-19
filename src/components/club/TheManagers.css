@@ -1,0 +1,42 @@
+
+  .managersContainer>img {
+      width: 100%;
+      margin: 2rem 0;
+  }
+
+
+  /* manager's info */
+  .managerInfo {
+      display: flex;
+      border-bottom: 1px solid #F5F5F5;
+      background-color: #fff;
+  }
+
+  .managerInfo>img {
+      width: 50%;
+      align-self: flex-end;
+
+  }
+
+
+  /* manager info container */
+  .managerInfo_container {
+      padding: 3rem;
+
+  }
+
+  .managerInfo_container h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #ec2227;
+  }
+
+  .managerInfo_container p {
+      color: #063978;
+      font-size: 20px;
+      line-height: 1.9;
+      font-family: 'Fira Sans', sans-serif !important;
+
+  }

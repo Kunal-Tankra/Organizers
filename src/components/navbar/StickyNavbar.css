@@ -1,0 +1,28 @@
+.stickyNavbarContainer{
+    width: 100%;
+    position: fixed;
+    top: -6rem;
+    z-index: 100;
+    transition: .2s ease-in-out;
+    transition-delay: 1s;
+}
+
+.stickyNavbarContainer .navbar{
+    background-color: rgba(22, 19, 78, 0.95) !important;
+    padding: 0 2rem;
+}
+
+
+.stickyNavbar_siteLogo{
+    width: 3.7rem;
+    margin-top: 2px;
+}
+
+/* media query */
+@media  screen and (max-width: 990px) {
+    .stickyNavbarContainer .container-fluid {
+        margin-bottom: 1rem;
+    
+    }
+    
+}

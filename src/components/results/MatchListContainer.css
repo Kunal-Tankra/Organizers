@@ -1,0 +1,21 @@
+.matchListContainer{
+    padding: .7rem 0;
+}
+
+.matchListContainer>a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.matchListContainer>a svg{
+    margin-left: 1rem;
+}
+
+.allMatches{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: .5rem;
+    column-gap: .9rem;
+    margin-top: .5rem;
+}

@@ -1,0 +1,26 @@
+.newsDetails_date{
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f4f4;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.newsDetails_date p{
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+
+.newsDetails_clubNewsLink a{
+    text-decoration: none;
+    color: #D10A11;
+}
+
+.newsDetails_clubNewsLink a:hover{
+    text-decoration: underline;
+}
+
+.newsDetails_container>p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}

@@ -1,0 +1,16 @@
+.honours_container{
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    /* padding: 2rem; */
+}
+
+.honours_container>h1   {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    /* font-weight: 600; */
+}
+
+.slick-arrow{
+    display: none !important;
+}

@@ -1,0 +1,45 @@
+.clubNews{
+    background-color: #fff;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5rem 7rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.clubNews_selectType{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    
+}
+
+.clubNews_selectType button{
+    color: black;
+}
+
+.clubNews>h2{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    color: #d10a11;
+    border-left: #d10a11 1px solid;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.clubNews_childrenContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* media query */
+@media screen and (max-width: 990px) {
+    .clubNews{
+        padding: 5rem 1rem;
+    }
+}
+
+

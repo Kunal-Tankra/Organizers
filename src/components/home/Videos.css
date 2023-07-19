@@ -1,0 +1,44 @@
+.videos{
+    background-color: #1E1E1E;
+    border-top: 8px solid #2A479D;
+    padding: 4rem 10rem;
+}
+
+.videos > img{
+    width: 13rem;
+    margin-bottom: 4rem;
+}
+
+/* videos Container */
+.videosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1.2rem;
+
+}
+
+.videosContainer .uTubeVideo{
+    width: 48%;
+    height: 17rem;
+}
+
+/* media query */
+@media screen and (max-width: 1134px) {
+    .videos{
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .videosContainer .uTubeVideo{
+        width: 47%;
+        height: 14rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .videosContainer .uTubeVideo{
+        width: 100%;
+        height: 14rem;
+    }
+}
