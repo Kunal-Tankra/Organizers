@@ -1,0 +1,21 @@
+.resultInfo{
+    border-bottom: 1px solid #dfdfdfda;
+    padding: 1rem 0;
+}
+
+.resultInfo>h5{
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.resultInfo>span{
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(18, 18, 18);
+}
+
+.resultInfo .infoSubHeading{    
+    margin-bottom: 5px;
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+}

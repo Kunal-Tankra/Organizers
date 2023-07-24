@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import "./ResultDetails.css"
 import { NavLink, Outlet } from 'react-router-dom'
 
@@ -9,6 +9,8 @@ const ResultDetails = () => {
     const handleNavUnderLine = (e) => {
         setUnderLine_left(e.target.offsetLeft + "px")
     }
+
+ 
 
     return (
         <>
