@@ -23,8 +23,12 @@ import "./components/Login.css"
 import Results from './components/results/Results';
 import ResultsContainer from './components/results/ResultsContainer';
 import EventAllResults from './components/results/EventAllResults';
+import ResultDetails from './components/results/ResultDetails';
+import ResultDInfo from './components/results/ResultDInfo';
+import ResultDVideos from './components/results/ResultDVideos';
 
 function App() {
+  // eslint-disable-next-line
   const [studentsData, setStudentsData] = useState([]);
   const [showAfterScroll, setShowAfterScroll] = useState(false);
 
@@ -74,14 +78,22 @@ function App() {
           {/* results */}
           <Route exact path="/results" element={<Results />} >
             {/* <Route index element={<h1>cricket</h1>} /> */}
-            <Route exact path="cricket" element={<ResultsContainer/>} />
-            <Route exact path="football" element={<ResultsContainer/>} />
-            <Route exact path="volleyball" element={<ResultsContainer/>} />
+            <Route exact path="cricket" element={<ResultsContainer />} />
+            <Route exact path="football" element={<ResultsContainer />} />
+            <Route exact path="volleyball" element={<ResultsContainer />} />
 
           </Route>
 
           {/* all results */}
           <Route exact path="/results/:id" element={<EventAllResults />} />
+
+          {/* result details */}
+          <Route exact path="/result/:id" element={<ResultDetails />} >
+            <Route index element={<ResultDInfo />} />
+            <Route exact path="info" element={<ResultDInfo />} />
+            <Route exact path="videos" element={<ResultDVideos />} />
+
+          </Route>
 
         </Routes>
 

@@ -13,7 +13,7 @@ const MatchListContainer = (props) => {
             </NavLink>
 
             <div className="allMatches">
-                {matcheResults?.slice(0,3).map(result=><SingleMatch key={result.id} result_short_description={result.result_short_description} team_name1={result.team_name1} team_name2={result.team_name2} team_score1={result.team_score1}   team_score2={result.team_score2} />)}
+                {matcheResults?.slice(0,3).map(result=><SingleMatch key={result.id} id={result.id} fixture={result.fixture} result_short_description={result.result_short_description} team_name1={result.team_name1} team_name2={result.team_name2} team_score1={result.team_score1}   team_score2={result.team_score2} />)}
             </div>
 
         </div>

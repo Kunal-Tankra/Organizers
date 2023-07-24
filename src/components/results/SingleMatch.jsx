@@ -3,11 +3,11 @@ import "./SingleMatch.css"
 import { NavLink } from 'react-router-dom'
 
 const SingleMatch = (props) => {
-    const { result_short_description, team_name1, team_name2, team_score1, team_score2 } = props
+    const {id, fixture,result_short_description, team_name1, team_name2, team_score1, team_score2 } = props
     return (
-        <NavLink to="/" className='singleMatch'>
+        <NavLink to={`/result/${id}`} className='singleMatch'>
             <span className="matchType">
-                Final
+                {fixture? fixture: "League Match"}
             </span>
 
             <div className="score">
