@@ -1,0 +1,19 @@
+.result_videosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.result_videosContainer iframe {
+    /* width: 40%; */
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+/* media query */
+/* @media screen and (max-width:) {
+
+    .result_videosContainer iframe {}
+} */

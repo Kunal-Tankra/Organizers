@@ -2,6 +2,7 @@ import React from 'react'
 import "./ResultDInfo.css"
 
 const ResultDInfo = () => {
+   
     return (
         <>
             <div className="resultInfo">

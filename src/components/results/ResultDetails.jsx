@@ -10,7 +10,7 @@ const ResultDetails = () => {
         setUnderLine_left(e.target.offsetLeft + "px")
     }
 
- 
+
 
     return (
         <>
