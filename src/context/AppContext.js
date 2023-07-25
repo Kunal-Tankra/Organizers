@@ -1,11 +1,13 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 const AllContexts = createContext()
-const AppContext = ({children}) => {
+const AppContext = ({ children }) => {
+  // state for result data
+  const [resultData, setResultData] = useState({});
 
-    const statesObj = {
-
-    }
+  const statesObj = {
+    resultData, setResultData
+  }
 
   return (
     <AllContexts.Provider value={statesObj}>
@@ -14,5 +16,5 @@ const AppContext = ({children}) => {
   )
 }
 
-export  {AppContext}
+export { AppContext }
 export default AllContexts

@@ -1,9 +1,9 @@
-.resultContainer{
+.resultContainer {
     padding-left: 14rem;
     padding-right: 14rem;
 }
 
-.teams_scores{
+.teams_scores {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
@@ -12,28 +12,28 @@
     position: relative;
 }
 
-.team{
+.team {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.team>.teamName{
- background-color: rgb(200, 200, 200);
- color: white;
- padding: 3px 5px;
- font-size: 11px;
- font-weight: 400;
- border-radius: 3px;
- letter-spacing: 1px;
+.team>.teamName {
+    background-color: rgb(200, 200, 200);
+    color: white;
+    padding: 3px 5px;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 3px;
+    letter-spacing: 1px;
 }
 
-.team>.score{
+.team>.score {
     font-weight: 600;
     font-size: 28px;
 }
 
-.versus{
+.versus {
     color: rgb(153, 160, 179);
     border-radius: 50%;
     padding: 3px;
@@ -44,10 +44,15 @@
     align-items: center;
     background-color: rgb(230, 231, 236);
     z-index: 1;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
-.verticalLine{
+.verticalLine {
+    transform: translateX(-50%);
     position: absolute;
     left: 50%;
     height: 68px;
@@ -55,18 +60,18 @@
 }
 
 /* navbar */
-.resultNavbar{
+.resultNavbar {
     border-bottom: 1px solid rgb(230, 231, 236);
     border-top: 1px solid rgb(230, 231, 236);
     margin: 1.5rem 0;
     position: relative;
-overflow: hidden;
+    overflow: hidden;
 }
 
-.resultNavbar a{
+.resultNavbar a {
     display: inline-block;
     width: 50%;
-    text-align:  center;
+    text-align: center;
     text-decoration: none;
     color: initial;
     margin: .7rem 0;
@@ -74,12 +79,12 @@ overflow: hidden;
     font-weight: 300;
 }
 
-.resultNavbar a.active{
+.resultNavbar a.active {
     color: black;
     font-weight: 500;
 }
 
-.navUnderline{
+.navUnderline {
     width: 50%;
     height: 7px;
     border-radius: 30px;
@@ -91,5 +96,5 @@ overflow: hidden;
     transform: translateY(50%);
 
     transition: .3s;
-    
+
 }

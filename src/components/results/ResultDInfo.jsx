@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./ResultDInfo.css"
+import AllContexts from '../../context/AppContext'
 
 const ResultDInfo = () => {
-   
+    // context
+  const {resultData} = useContext(AllContexts)
+
     return (
         <>
             <div className="resultInfo">
