@@ -1,125 +1,266 @@
 /* login bg image */
-.login_BgImg{
-    max-height: 90vh;
-    overflow: hidden;
+.login_BgImg {
+  max-height: 90vh;
+  overflow: hidden;
 }
 
-.login_BgImg img{
-    width: 100%;
-    transition: .8s;
+.login_BgImg img {
+  width: 100%;
+  transition: 0.8s;
 }
 
-.login_BgImg img:hover{
-    transform: scale(1.07);
+.login_BgImg img:hover {
+  transform: scale(1.07);
 }
 
 /* login container */
-.loginContainer{
-    background-color: #fff;  
-    width: 80%;
-    margin: 0px auto;
-    padding: 3.5rem 5.5rem;
-    position: relative;
-    bottom: 7rem;
+.loginContainer {
+  background-color: #fff;
+  width: 80%;
+  margin: 0px auto;
+  padding: 3.5rem 5.5rem;
+  position: relative;
+  bottom: 7rem;
 }
 
-.loginContainer>h1{
-    font-size: 3rem;
-    color: #444;
-    font-weight: 900;
+.loginContainer > h1 {
+  font-size: 3rem;
+  color: #444;
+  font-weight: 900;
 }
 
 /* form */
-.loginContainer form{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #999;
+.loginContainer form {
+  font-family: Helvetica, sans-serif, 'Tribuchet MS';
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #999;
 }
 
-.loginContainer form a{
-    color: #2bb7e3;
+.loginContainer form a {
+  color: #2bb7e3;
 }
 
-.loginName , .loginPassword{
-    margin: 15px;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: solid 2px #26bbea;
-    padding: 5px;
-    transition: .5s;
+.loginName,
+.loginPassword {
+  margin: 15px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 2px #26bbea;
+  padding: 5px;
+  transition: 0.5s;
 }
 
-.loginName:hover , .loginPassword:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.loginName:hover,
+.loginPassword:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.loginName svg , .loginPassword svg{
-    color: #999;
+.loginName svg,
+.loginPassword svg {
+  color: #999;
 }
 
-.loginName input, .loginPassword input{
-
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 5px;
+.loginName input,
+.loginPassword input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
 }
 
-.login_afterInputs{
-    /* border: solid 1px red; */
-    margin-top: 15px;
-    gap: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.login_afterInputs {
+  /* border: solid 1px red; */
+  margin-top: 15px;
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 
 /* login btn */
-.loginBtn{
-    width: 30%;
-    color: #2bb7e3;
-    border: #2bb7e3 2px solid;
-    margin: 25px 0;
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: large;
-    letter-spacing: 1px;
-    transition: .5s;
+.loginBtn {
+  width: 30%;
+  color: #2bb7e3;
+  border: #2bb7e3 2px solid;
+  margin: 25px 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: large;
+  letter-spacing: 1px;
+  transition: 0.5s;
 }
 
-.loginBtn:hover{
-    color: #fff;
-    background-color: #2bb7e3;
-    width: 32%;
+.loginBtn:hover {
+  color: #fff;
+  background-color: #2bb7e3;
+  width: 100%;
 }
 
 /* media query */
-@media screen and (max-width: 950px){
-    .loginContainer{
-        width: 100%;
-        bottom: 0;
-        padding: 2rem;
-    }
+@media screen and (max-width: 950px) {
+  .loginContainer {
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+  }
 
+  .loginName,
+  .loginPassword {
+    width: 80%;
+  }
 
-    .loginName , .loginPassword{
-        width: 80%;
-    }
+  .loginBtn {
+    width: 60%;
+  }
 
-    .loginBtn{
-        width: 60%;
-    }
+  .signup-container {
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+  }
+
+  #signUpBtn {
+    width: 60%;
+  }
 }
 
+@media screen and (min-width: 992px) {
+  .loginContainer {
+    width: 100%;
+    bottom: 0;
+    padding: 20rem;
+  }
 
+  .loginBtn {
+    width: 100%;
+  }
 
+  .signup-container {
+    width: 100%;
+    bottom: 0;
+    padding: 20rem;
+    margin-bottom: 0px;
+  }
 
+  #signUpBtn {
+    width: 100%;
+  }
+}
+
+.forgot-password-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 35%;
+}
+
+form label {
+  display: block;
+}
+
+.required {
+  color: red;
+}
+
+.signup-container {
+  width: 80%;
+  margin: 25em auto;
+  padding: 3.5rem 5.5rem;
+  position: relative;
+  background-color: white;
+}
+
+.signup-form {
+  width: 50%;
+  background-color: #f6f9fc;
+  padding: 2rem;
+}
+
+.signup-form input {
+  width: 350px;
+  height: 38px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.signup-form label {
+  margin-bottom: 5px;
+}
+
+#signUpBtn {
+  width: 100%;
+  color: white;
+  border: white 2px solid;
+  background-color: #aab7c4;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border-radius: 30px;
+  height: 46px;
+}
+
+#signUpBtn:hover {
+  color: #aab7c4;
+  background-color: white;
+  border: #aab7c4 2px solid;
+}
+
+.forgotContainer {
+  background-color: #fff;
+  width: 80%;
+  margin: 0px auto;
+  padding: 3.5rem 5.5rem;
+  position: relative;
+  bottom: 7rem;
+}
+
+.newPassword {
+  width: 30%;
+  color: #2bb7e3;
+  border: #2bb7e3 2px solid;
+  margin: 25px 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: large;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.newPassword:hover {
+  color: #fff;
+  background-color: #2bb7e3;
+  width: 100%;
+}
+
+.forgotInput {
+  border-radius: 30px;
+  height: 41px;
+  width: 400px;
+  padding: 10px 10px 10px 40px;
+  border: none;
+}
+
+.inputDiv {
+  border-bottom: 0.5px solid grey;
+}
+
+.inputDiv:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  border-bottom: 1px solid #2bb7e3;
+}
