@@ -5,6 +5,7 @@ import Membership from './Membership-Website-2.png'
 import Videos from './Videos'
 import TournamentsContainer from './tournaments/TournamentsContainer'
 import { events } from '../../data'
+import UseLayoutEffect from '../../hoooks/UseLayoutEffect'
 
 const Home = () => {
   // const [events, setEvents] = useState([])
@@ -26,6 +27,7 @@ const Home = () => {
       >
         <img src={Membership} alt="membership background" />
       </a>
+      <UseLayoutEffect />
       <TournamentsContainer events={events} />
       <Videos />
     </>

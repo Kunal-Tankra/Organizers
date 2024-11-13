@@ -51,98 +51,100 @@ function App() {
   })
 
   return (
-    <BrowserRouter>
-      {showAfterScroll ? (
-        <StickyNavbar showAfterScroll={showAfterScroll} />
-      ) : (
-        <Navbar />
-      )}
+    <div>
+      <BrowserRouter>
+        {showAfterScroll ? (
+          <StickyNavbar showAfterScroll={showAfterScroll} />
+        ) : (
+          <Navbar />
+        )}
 
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/lost-password" element={<LostPassword />} />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/lost-password" element={<LostPassword />} />
 
-        <Route exact path="/topics/club-news/" element={<Announcements />} />
-        <Route
-          exact
-          path="/topics/club-news/newsDetails/:newsId"
-          element={<NewsDetails />}
-        />
+          <Route exact path="/topics/club-news/" element={<Announcements />} />
+          <Route
+            exact
+            path="/topics/club-news/newsDetails/:newsId"
+            element={<NewsDetails />}
+          />
 
-        <Route exact path="/owners/" element={<Owners />} />
-        <Route exact path="/managers/" element={<TheManagers />} />
-        {/* <Route exact path="/first-team/squad/" element={<Squad img={squadBGImg} />} /> */}
-        <Route exact path="/topics/academy/" element={<AcademyNews />} />
-        <Route
-          exact
-          path="/academy/under-18/"
-          element={
-            <Under18
-              students={studentsData.filter(
-                (std) => std.category === 'under18'
-              )}
-            />
-          }
-        />
-        <Route
-          exact
-          path="/academy/under-15/"
-          element={
-            <Under15
-              students={studentsData.filter(
-                (std) => std.category === 'under15'
-              )}
-            />
-          }
-        />
-        <Route
-          exact
-          path="/academy/under-13/"
-          element={
-            <Under13
-              students={studentsData.filter(
-                (std) => std.category === 'under13'
-              )}
-            />
-          }
-        />
+          <Route exact path="/owners/" element={<Owners />} />
+          <Route exact path="/managers/" element={<TheManagers />} />
+          {/* <Route exact path="/first-team/squad/" element={<Squad img={squadBGImg} />} /> */}
+          <Route exact path="/topics/academy/" element={<AcademyNews />} />
+          <Route
+            exact
+            path="/academy/under-18/"
+            element={
+              <Under18
+                students={studentsData.filter(
+                  (std) => std.category === 'under18'
+                )}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/academy/under-15/"
+            element={
+              <Under15
+                students={studentsData.filter(
+                  (std) => std.category === 'under15'
+                )}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/academy/under-13/"
+            element={
+              <Under13
+                students={studentsData.filter(
+                  (std) => std.category === 'under13'
+                )}
+              />
+            }
+          />
 
-        {/* tournament's details */}
-        <Route exact path="/tournament/:id" element={<TournamentDetails />} />
+          {/* tournament's details */}
+          <Route exact path="/tournament/:id" element={<TournamentDetails />} />
 
-        {/* results */}
-        <Route exact path="/results" element={<Results />}>
-          {/* <Route index element={<h1>cricket</h1>} /> */}
-          <Route exact path="cricket" element={<ResultsContainer />} />
-          <Route exact path="football" element={<ResultsContainer />} />
-          <Route exact path="volleyball" element={<ResultsContainer />} />
-        </Route>
+          {/* results */}
+          <Route exact path="/results" element={<Results />}>
+            {/* <Route index element={<h1>cricket</h1>} /> */}
+            <Route exact path="cricket" element={<ResultsContainer />} />
+            <Route exact path="football" element={<ResultsContainer />} />
+            <Route exact path="volleyball" element={<ResultsContainer />} />
+          </Route>
 
-        {/* all results */}
-        <Route exact path="/results/:id" element={<EventAllResults />} />
+          {/* all results */}
+          <Route exact path="/results/:id" element={<EventAllResults />} />
 
-        {/* result details */}
-        <Route exact path="/result/:id" element={<ResultDetails />}>
-          <Route index element={<ResultDInfo />} />
-          <Route exact path="info" element={<ResultDInfo />} />
-          <Route exact path="videos" element={<ResultDVideos />} />
-        </Route>
-      </Routes>
+          {/* result details */}
+          <Route exact path="/result/:id" element={<ResultDetails />}>
+            <Route index element={<ResultDInfo />} />
+            <Route exact path="info" element={<ResultDInfo />} />
+            <Route exact path="videos" element={<ResultDVideos />} />
+          </Route>
+        </Routes>
 
-      {showAfterScroll && (
-        <img
-          className="goToTopArrow"
-          onClick={() => window.scrollTo(0, 0)}
-          src={upArrowImg}
-          alt="up arrow"
-        />
-      )}
+        {showAfterScroll && (
+          <img
+            className="goToTopArrow"
+            onClick={() => window.scrollTo(0, 0)}
+            src={upArrowImg}
+            alt="up arrow"
+          />
+        )}
 
-      <MoreCompanies />
-      <Footer />
-    </BrowserRouter>
+        <MoreCompanies />
+        <Footer />
+      </BrowserRouter>
+    </div>
   )
 }
 
